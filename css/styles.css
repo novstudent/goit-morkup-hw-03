@@ -17,10 +17,36 @@ body {
   color: var(--primary-color);
 }
 
+/* контейнери для секцій div container */
+.container {
+  outline: 1px solid red;
+  width: 1200px;
+
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+}
+
 /*==================================
  секція heder навігація ,логотип*/
-
+.heder-container {
+  display: flex;
+  align-items: center;
+}
 .header-logo {
+  margin-right: 90px;
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -35,12 +61,27 @@ body {
 /* навігація */
 
 .header-nav {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
   color: var(--primary-color);
   text-decoration: none;
 }
+.item {
+  margin-right: 50px;
+}
+.header-item:last-child {
+  margin-right: 0px;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 .link:hover,
 .link:focus {
   color: var(--accent-color);
@@ -50,12 +91,16 @@ body {
 }
 
 .header-kontact {
+  margin-left: auto;
+  display: flex;
+
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
   color: var(--gray-col);
   text-decoration: none;
 }
+
 .header-kontact,
 .header-nav {
   list-style: none;
@@ -77,6 +122,12 @@ body {
   color: var(--white-col);
 }
 .main-btn {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #2196f3;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -88,15 +139,24 @@ body {
 }
 
 /* секція 3 features особливості */
+
+.section-features {
+  padding-top: 44px;
+  padding-bottom: 94px;
+}
 .features {
   list-style: none;
 }
 .section-title {
+  margin-top: 0px;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
 }
 .section-text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 1.71429;
   color: var(--gray-col);
