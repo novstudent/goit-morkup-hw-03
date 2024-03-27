@@ -385,14 +385,9 @@ img {
 
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
   padding: 0px;
-}
-.item {
-  margin: 0px 30px 30px 0px;
-}
-
-.projects .pol {
-  margin-right: 0px;
+  margin: 0px;
 }
 
 .project {
