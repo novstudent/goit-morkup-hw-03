@@ -43,14 +43,19 @@ p {
 img {
   display: block;
 }
+ul {
+  margin: 0;
+  padding: 0;
+}
 
 /*==================================
  секція heder навігація ,логотип*/
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .heder-container {
   display: flex;
   align-items: center;
-  margin-top: 20px;
-  border: 1px solid #ececec;
 }
 .header-logo {
   margin-right: 90px;
@@ -70,8 +75,6 @@ img {
 .header-nav {
   display: flex;
   align-items: center;
-  margin: 0px;
-  padding: 0px;
 
   font-weight: 500;
   font-size: 14px;
@@ -103,8 +106,6 @@ img {
 }
 
 .header-kontact {
-  padding: 0px;
-  margin: 0;
   margin-left: auto;
   display: flex;
 
@@ -141,6 +142,9 @@ img {
   text-align: center;
   color: var(--white-col);
   margin-bottom: 30px;
+  width: 626px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .main-btn {
   display: inline-block;
@@ -168,12 +172,9 @@ img {
 .features {
   display: flex;
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 .post {
   width: 270px;
-  margin: 0px;
   margin-right: 30px;
 }
 .post:last-child {
@@ -194,19 +195,17 @@ img {
 }
 
 /* секція 4 чим ми займаїмось */
-.work {
+.works {
   padding-bottom: 94px;
 }
 .img {
   margin-right: 30px;
 }
 .ourwork {
-  padding: 0px;
-  margin: 0px;
   display: flex;
   list-style: none;
 }
-.work .section-heading {
+.works .section-heading {
   font-weight: 700;
   font-size: 36px;
   text-align: center;
@@ -216,12 +215,11 @@ img {
 /* секція 5 наша команда */
 .team {
   background: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .our-team {
   display: flex;
-  padding: 0px;
-  margin: 0px;
-  padding-bottom: 94px;
 
   list-style: none;
 }
@@ -242,7 +240,7 @@ img {
   margin-bottom: 50px;
 }
 .name {
-  margin-top: 30px;
+  /* margin-top: 30px; */
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -252,6 +250,10 @@ img {
   font-size: 16px;
   color: var(--gray-col);
   text-align: center;
+}
+.name-work {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /*===================================
@@ -265,7 +267,6 @@ img {
   margin-bottom: 9px;
 }
 .footer-adres {
-  margin-top: 20px;
   margin-bottom: 9px;
 }
 .footer-logo {
@@ -284,6 +285,7 @@ img {
   font-size: 14px;
   line-height: 1.71429;
   color: var(--white-col);
+  margin: 20px 0px 0px 0px;
 }
 .address-mail,
 .address-tel {
