@@ -19,7 +19,7 @@ body {
 
 /* контейнери для секцій div container */
 body {
-  width: 1600px;
+  /* width: 1600px; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -139,13 +139,14 @@ ul {
   line-height: 1.36364;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  text-align: center;
+
   color: var(--white-col);
   margin-bottom: 30px;
   width: 626px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .main-btn {
   display: inline-block;
   border-radius: 4px;
@@ -240,7 +241,6 @@ ul {
   margin-bottom: 50px;
 }
 .name {
-  /* margin-top: 30px; */
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -353,9 +353,8 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 34px;
+
+  margin-bottom: 50px;
   list-style: none;
 }
 .item-btn {
@@ -366,30 +365,31 @@ ul {
 }
 
 /* секція проекти */
+.proect {
+  padding: 20px 24px;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
 .proect-title {
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin: 20px 0px 4px 24px;
-
   color: var(--primary-color);
 }
 .proect-txt {
-  margin: 0px 0px 20px 24px;
   font-size: 16px;
   line-height: 1.875;
-
   color: var(--gray-col);
 }
 .projects {
   list-style: none;
-
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding: 0px;
-  margin: 0px;
 }
 
 .project {
