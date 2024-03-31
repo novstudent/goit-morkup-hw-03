@@ -19,12 +19,10 @@ body {
 
 /* контейнери для секцій div container */
 body {
-  /* width: 1600px; */
   margin-left: auto;
   margin-right: auto;
 }
 .container {
-  /* outline: 1px solid red; */
   width: 1200px;
 
   padding-left: 15px;
